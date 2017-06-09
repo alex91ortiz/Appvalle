@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Appvalle</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_registro">RegistroActivity</string>
+    <string name="hint_Direccion">Direccion</string>
+    <string name="hint_SitioWeb">Sitio Web</string>
+    <string name="hint_correo">Correo Electronico</string>
+    <string name="hint_phone">Numero Telefonico</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="aceptar">ACEPTAR</string>
+    <string name="hint_smartphone">NUMERO CELULAR</string>
+    <string name="hint_smartphon">Numero Celular</string>
+</resources>
