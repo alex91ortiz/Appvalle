@@ -133,6 +133,8 @@ public class hotelStorage {
         }.start();
     }
 
+
+
     public void lista(final interfaceStorage callBack){
         final Handler callerThreadHandler = new Handler();
         new Thread() {

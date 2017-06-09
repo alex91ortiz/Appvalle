@@ -14,6 +14,9 @@ import com.jcsoluciones.appvalle.R;
 import com.jcsoluciones.appvalle.adapters.MyhotelesRecyclerViewAdapter;
 import com.jcsoluciones.appvalle.adapters.dummy.DummyContent;
 import com.jcsoluciones.appvalle.adapters.dummy.DummyContent.DummyItem;
+import com.jcsoluciones.appvalle.networks.interfaceStorage;
+import com.shephertz.app42.paas.sdk.android.App42Exception;
+import com.shephertz.app42.paas.sdk.android.storage.Storage;
 
 /**
  * A fragment representing a list of Items.
@@ -21,7 +24,7 @@ import com.jcsoluciones.appvalle.adapters.dummy.DummyContent.DummyItem;
  * Activities containing this fragment MUST implement the {@link OnListFragmentInteractionListener}
  * interface.
  */
-public class HotelesListFragment extends Fragment {
+public class HotelesListFragment extends Fragment implements interfaceStorage {
 
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
@@ -90,6 +93,46 @@ public class HotelesListFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onDocumentInserted(Storage response) {
+
+    }
+
+    @Override
+    public void onUpdateDocSuccess(Storage response) {
+
+    }
+
+    @Override
+    public void onFindDocSuccess(Storage response) {
+
+    }
+
+    @Override
+    public void onDocumentDelete(Storage response) {
+
+    }
+
+    @Override
+    public void onInsertionFailed(App42Exception ex) {
+
+    }
+
+    @Override
+    public void onFindDocFailed(App42Exception ex) {
+
+    }
+
+    @Override
+    public void onUpdateDocFailed(App42Exception ex) {
+
+    }
+
+    @Override
+    public void onDeleteFailed(App42Exception ex) {
+
     }
 
     /**
